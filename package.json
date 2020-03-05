@@ -1,0 +1,35 @@
+{
+  "name": "nahmii-sdk-project-skeleton",
+  "version": "1.0.0",
+  "description": "Project skeleton for nahmii-sdk",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubiinetwork/nahmii-sdk-project-skeleton.git"
+  },
+  "keywords": [
+    "nahmii",
+    "ethereum",
+    "hubii",
+    "blockchain"
+  ],
+  "author": "Jens Ivar Jørdre <jensivar@hubii.com>",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/hubiinetwork/nahmii-sdk-project-skeleton/issues"
+  },
+  "homepage": "https://github.com/hubiinetwork/nahmii-sdk-project-skeleton#readme",
+  "dependencies": {
+    "bson": "^4.0.3",
+    "debug": "^4.1.1",
+    "ethers": "^4.0.45",
+    "nahmii-ethereum-address": "^2.1.2",
+    "nahmii-sdk": "^4.4.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
