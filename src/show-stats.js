@@ -37,13 +37,17 @@ const nahmii = require('nahmii-sdk');
         // Check balances
         // --------------------------------------------------------------------
         const balances = await wallet.getNahmiiBalance();
+        // Low level alternative:
+        // const balances = await provider.getNahmiiBalances(wallet.address);
         debug(`balances: ${JSON.stringify(balances)}`);
 
         // --------------------------------------------------------------------
         // Get the wallet's previous receipts
         // --------------------------------------------------------------------
-        const walletReceipts = await provider.getWalletReceipts(wallet.address);
-        debug(`wallet receipts: ${JSON.stringify(walletReceipts)}`);
+        const walletReceipts = await wallet.getReceipts( null, 2);
+        // Low level alternative:
+        // const walletReceipts = await provider.getWalletReceipts(wallet.address, null, 2);
+        debug(`wallet receipts: ${JSON.stringify(walletReceipts, null, 2)}`);
 
     } finally {
         provider.stopUpdate();
